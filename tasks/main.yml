@@ -70,6 +70,17 @@
   notify:
     - restart node exporter
 
+- name: create openrc service unit
+  template:
+    src: etc/openrc/prometheus-node-exporter.j2
+    dest: /etc/init.d/prometheus-node-exporter
+    owner: root
+    group: root
+    mode: 0755
+  when: ansible_service_mgr == 'service'
+  notify:
+    - restart node exporter
+
 - meta: flush_handlers
 
 - name: ensure prometheus node exporter service is enabled and started

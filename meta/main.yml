@@ -23,5 +23,6 @@ galaxy_info:
     - 5
     - 6
     - 7
+  - name: Alpine
   galaxy_tags:
   - monitoring
