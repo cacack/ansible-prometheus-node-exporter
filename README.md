@@ -27,7 +27,7 @@ All needed packages will be installed with this role.
 - hosts: node-exporters
   roles:
     - role: UnderGreen.prometheus-node-exporter
-      prometheus_node_exporter_version: 0.15.1
+      prometheus_node_exporter_version: 0.16.0
       prometheus_node_exporter_enabled_collectors:
         - conntrack
         - cpu
