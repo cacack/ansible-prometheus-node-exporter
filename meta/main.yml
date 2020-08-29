@@ -1,8 +1,5 @@
 ---
 
-dependencies:
-  - cacack.prometheus-exporters-common
-
 galaxy_info:
   author: Chris Clonch
   description: Deploy Prometheus Node Exporter
